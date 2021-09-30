@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Text Shadow Generator</title>
+</head>
+<body>
+<h1>Text Shadow Generator</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary">Настройки:</div>
+                <div class="card-body">
+                    <label for="fontSize">Размер шрифта</label>
+                    <input class="form-range" id="fontSize" type="range" min="8" max="40" step="1" value="40">
+                    <label for="offsetX">Смещение по оси X:</label>
+                    <input class="form-range" id="offsetX" type="range" min="-15" max="15" step="1" value="4">
+                    <label for="offsetY">Смещение по оси Y:</label>
+                    <input class="form-range" id="offsetY" type="range" min="-15" max="15" step="1" value="-1">
+                    <label for="blur">Размытие:</label>
+                    <input class="form-range" id="blur" type="range" min="0" max="15" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary">Цвет:</div>
+                <div class="card-body">
+                    <input type="color" value="#ff0000">
+                    <label for="opacity">Прозрачность</label>
+                    <input class="form-range" id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="card">
+                <div class="card-header bg-primary">Результат:</div>
+                <div class="card-body">
+                    <label for="resultHex">Цвет в HEX</label>
+                    <textarea id="resultHex" rows="4" readonly></textarea><br>
+                    <label for="resultRgba">Цвет в RGBA</label>
+                    <textarea id="resultRgba" rows="3" readonly></textarea><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
